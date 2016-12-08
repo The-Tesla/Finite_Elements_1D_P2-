@@ -3,7 +3,7 @@ function [U] = EF_P2(alpha,beta,gamma,f,X,T)
 %
 %Creation de la matrice globale K et du second membre globale F
 %[X, T] = MaillageP1(a, b, h);
-Nn=size(X,1)+1;      %nombre des noeuds
+Nn=size(X,1);      %nombre des noeuds
 [K,F] = AssemblageP2(alpha,beta,gamma,f, X, T);
 %
 % Conditions aux bords
